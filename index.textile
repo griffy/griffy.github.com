@@ -1,0 +1,8 @@
+---
+layout: default
+title: About Me
+---
+
+h2. Joel Griffith
+
+Coming *soon*
