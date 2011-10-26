@@ -1,0 +1,17 @@
+body {
+    background: #fffff0;
+    font-family: 'Open Sans', 'Droid Serif', sans-serif;
+}
+
+h2 {
+    font-family: 'Droid Sans', 'Ubuntu', sans-serif;
+}
+
+#content {
+    margin: auto;
+}
+
+#post {
+    border-left: 2px solid #f0ead6;
+    padding: 0px 5px 5px 5px;
+}
