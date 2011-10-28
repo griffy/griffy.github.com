@@ -7,11 +7,39 @@
     <title>Joel Griffith - {{ page.title }}</title>
   </head>
   <body>
-    <div id="content">
-      <h2>Joel Griffith</h3>
-      <div id="post">
-        {{ content }}
+    <div id="container">
+      <div id="header">
+        <h1>Joel Griffith</h1>
       </div>
+      <div id="nav">
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../../../projects.html">Projects</a></li>
+          <li><a href="../../../resume.html">R&#233;sum&#233;</a></li>
+          <li><a href="../../../contact.html">Contact Me</a></li>
+          <li><a class="active" href="../../../blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <br />
+      <div id="content">
+        <div id="post" class="shadow">
+          {{ content }}
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'jgriffy';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+    <div id="footer">
+      <span>Copyright 2011 Joel Griffith. All rights reserved.</span>
     </div>
   </body>
 </html>
