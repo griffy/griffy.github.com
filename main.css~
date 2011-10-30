@@ -2,7 +2,7 @@ html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background: url(images/bg.jpg) no-repeat center center fixed;
+    background: url(images/2-darker.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -80,6 +80,50 @@ body {
 }
 
 #infobox a:hover {
+    color: #d79421;
+}
+
+#post {
+    color: #000000;
+    margin: auto;
+    background: #ffffff;
+
+    border: 2px solid #2d2d2d;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    padding: 30px 30px 30px 30px;
+    min-width: 40%;
+    max-width: 60%;
+}
+
+#post a {
+    color: #2d2d2d;
+}
+
+#post a:hover {
+    color: #d79421;
+}
+
+.post_preview {
+    color: #000000;
+    margin: auto;
+    background: #ffffff;
+
+    border: 2px solid #2d2d2d;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    padding: 30px 30px 30px 30px;
+    min-width: 40%;
+    max-width: 60%;
+}
+
+.post_preview a {
+    color: #2d2d2d;
+}
+
+.post_preview a:hover {
     color: #d79421;
 }
 
