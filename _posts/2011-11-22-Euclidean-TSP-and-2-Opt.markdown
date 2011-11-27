@@ -31,7 +31,7 @@ The simple answer to the first question is:
 
 >We don't.
 
-Since we don't know, the only way to find out is to *try*! Really, what we must do is iterate through all possible pairwise exchanges (therefore looking at every possible *combination* of two edges) and calculate their improvements, ultimately using the exchange that offers the most improvement. We do this until no more improvements can be made.
+Since we don't know, the only way to find out is to try! Really, what we must do is iterate through all possible pairwise exchanges (therefore looking at every possible *combination* of two edges) and calculate their improvements, ultimately using the exchange that offers the most improvement. We do this until no more improvements can be made.
 
 However, there is one issue you might run into when attempting to exchange edges: Some of them share vertices.
 
@@ -67,9 +67,9 @@ Assuming once again we have a list (a, b, c, d), the pairs of edges we *can* con
     
 You'll notice the last two pairs are redundant. Hold onto that thought.
 
-Now that we know which edges to perform pairwise exchanges on, we can gauge their improvements by first measuring the difference of the total weight of both edges in the original pair versus the total weight of both edges in the new pair.
+Now that we know which edges to perform pairwise exchanges on, we can gauge their improvements by measuring the difference of the total weight of both edges in the original pair versus the total weight of both edges in the new pair.
 
-Putting it all together now, we can write some pseudo-code:
+We should have everything we need now. Putting it all together, we can write some pseudo-code:
 
     // where G is the graph and W is the weights of edges
     def 2opt(G=(V,E), W)
