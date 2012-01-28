@@ -3,6 +3,8 @@ layout: post
 title: how is project formed? how ruby get wretten?
 ---
 
+*Note*: If you don't understand the point of this post, you're not its intendended audience. ;)
+
 ### Part 1
 
 Write a program, without creating any functions to break up the work for you, that presents the following Knock-Knock exchange:
