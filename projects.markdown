@@ -3,7 +3,7 @@ layout: main
 title: Projects
 ---
 
-### Projects
+## Projects
 
 During my spare time, I like to work on projects.
 
