@@ -3,23 +3,23 @@ layout: post
 title: how is project formed? how ruby get wretten?
 ---
 
-## Part 1
+### Part 1
 
 Write a program, without creating any functions to break up the work for you, that presents the following Knock-Knock exchange:
 
     $ *knock knock*
-    $ Who's there? <user input>
+    $ Who's there? <- user input
     $ Doctor
-    $ Doctor who? <user input>
+    $ Doctor who?  <- user input
     $ Exactly!
 
 Try your best to get the formatting to look exactly like that. If the user does not enter the text exactly as it should be, print out a message saying, "You ruined the joke!" and quit.
 
 When you finish the program, save it in a file named part1.rb
 
-## Part 2
+### Part 2
 
-Let's spruce up (tree power) the previous program a bit, shall we?
+Let's spruce up the previous program a bit, shall we?
 
 Should we really punish someone who types "Doctor Who?" instead of "Doctor who?" I think not! Figure out a way to accept responses ignoring case. Hint: Strings are objects, and objects have methods.
 
@@ -27,27 +27,27 @@ Now, perhaps our user got distracted and really didn't mean to type this:
 
     $ ...
     $ Doctor
-    $ Herp
+    $ Derp
     
 I think we should give users 3 chances to say the right thing! So, a poorly-communicated exchange should go something like this:
 
     $ *knock knock*
-    $ MATT DAMON!
-    $ I don't think you meant to say "MATT DAMON!". Let's try that again.
+    $ What's it?
+    $ I don't think you meant to say "When's it?". Let's try that again.
     $ *knock knock*
-    $ FUCK OFF
-    $ I don't think you meant to say "FUCK OFF". Let's try that again.
+    $ Why's that?
+    $ I don't think you meant to say "Why's that?". Let's try that again.
     $ *knock knock*
-    $ I SAID LEAVE
+    $ When's this?
     $ I gave you 3 chances, and you still ruined the joke!
 
-Hint: Doing the same thing over and over... I think there's a construct for that...
+Tip: Doing the same thing over and over... I think there's a construct for that...
 
-SuperHint: How many .times do I have to tell you to look things up yourself!
+ProTip: How many .times do I have to tell you to look things up yourself!
 
 When you've added that functionality, save the file as part2.rb
 
-## Part 3 aka An Entirely Different Project
+### Part 3 aka An Entirely Different Project
 
 Use as many control statements (if statements, case statements, loops) and functions as you can for this one. If you think a section of code is redundant, it probably is. Make it a function. If you find yourself calling the same function over and over, try a loop. The more you do this, the more you get a feel for what makes sense and actually improves the code and its readability. If you have a function that calls one line of code, that's probably an unnecessary function. Though it might read better, and sometimes that increase in readability is worth the trade-off. Figure it out yo damn self!
 
@@ -62,17 +62,17 @@ Like this:
     $ You're in a dark corridor. You
     $ 1. Dance
     $ 2. Run away screaming
-    $ 3. Cry
+    $ 3. Turn on the light
     $ 3
-    $ You cry. A troll appears!
+    $ You turn on a light, and a troll appears!
     $ 1. Slay it!
     $ 2. Give it a hug
     $ 3. Tickle it
-    $ 3
-    $ It realizes it's wasting its life and becomes a teacher!
+    $ 1
+    $ You slay the peaceful troll and acquire one gold coin. I hope it was worth it.
     $ You win! The End.
     
-### Suggestions
+#### Suggestions
 Write one function per output-input exchange such that all state for it is contained inside. It could look something like this:
 
     def exchange1
@@ -84,7 +84,7 @@ Write one function per output-input exchange such that all state for it is conta
 
 This is only one idea. You could do this many ways.
 
-### Extra Credit
+#### Extra Credit
 See how I said "a series" and "exchanges" up there? A series is... omg, it's like a list (aka array)! As for "exchanges", that's a cool word. A solid noun. As you learn more about Object-Oriented Programming, you'll learn that when you have a solid noun like that to describe your problem, it's usually a good idea to make that your object, and make methods that operate on that object.
 
 When done, save it as part3.rb and send it on upstream.
