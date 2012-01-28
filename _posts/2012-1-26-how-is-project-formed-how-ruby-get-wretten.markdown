@@ -3,7 +3,7 @@ layout: post
 title: how is project formed? how ruby get wretten?
 ---
 
-*Note*: If you don't understand the point of this post, you're not its intendended audience. ;)
+*Note*: If you don't understand the point of this post, you're not its intended audience. ;)
 
 ### Part 1
 
