@@ -1,8 +1,65 @@
----
-layout: main
-title: Page Not Found
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand|Chivo|Ubuntu+Condensed|Alice|Tinos|Kelly+Slab|Droid+Sans|Open+Sans|Droid+Serif|Ubuntu|Arvo|Philosopher' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Joel Griffith - {{ page.title }}</title>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26662557-1']);
+      _gaq.push(['_trackPageview']);
 
-Looks like you're lost. That sucks. Oh well. Enjoy this relevant and informative video!
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+          <h1><a href="index.html">Joel Griffith</a></h1>
+      </div>
+      <div id="nav">
+        <ul>
+          {% if page.title == 'Projects' %}
+          <li><a class="active" href="projects.html">Projects</a></li>
+          {% else %}
+          <li><a href="projects.html">Projects</a></li>
+          {% endif %}
+          
+          {% if page.title == 'Resume' %}
+          <li><a class="active" href="resume.html">R&#233;sum&#233;</a></li>
+          {% else %}
+          <li><a href="resume.html">R&#233;sum&#233;</a></li>
+          {% endif %}
+          
+          {% if page.title == 'Contact Me' %}
+          <li><a class="active" href="contact.html">Contact Me</a></li>
+          {% else %}
+          <li><a href="contact.html">Contact Me</a></li>
+          {% endif %}
+          
+          {% if page.title == 'Blog' or post.title %}
+          <li><a class="active" href="blog.html">Blog</a></li>
+          {% else %}
+          <li><a href="blog.html">Blog</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      <br />
+      <div id="content">
+        <div id="infobox">
+          <p>Looks like you're lost. That sucks. Oh well. Enjoy this relevant and informative video!</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/eI9CvipHl_c?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/eI9CvipHl_c?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <span>Copyright 2012 Joel Griffith. All rights reserved.</span>
+    </div>
+  </body>
+</html>
