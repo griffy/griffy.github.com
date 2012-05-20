@@ -20,9 +20,9 @@ This means that if you define the following class:
     
 What you're actually doing is more along these lines:
     
-    Person = Class.new(<definition>)
+    Person = Class.new
     
-If you think of a class you create as being *alive*--being a real variable like any other you can manipulate--things fall into place. All of a sudden it makes sense why you write Person.new any time you want a new instance of the Person class. You're really calling the "new" method of the Person object (which, again, is an instance of the Class class), and it's returning an instance of the Person *class* that you defined.
+If you think of a class you create as being *alive*--being a real variable like any other you can manipulate--things fall into place. All of a sudden it makes sense why you write Person.new any time you want a new instance of the Person class. You're really calling the "new" method of the Person object (which it inherited from the Class class), and that method is returning an instance of the Person *class* that you defined.
 
 It's all a bit like the Kansas City Shuffle.
         
