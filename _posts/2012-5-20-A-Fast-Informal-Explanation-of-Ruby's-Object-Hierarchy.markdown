@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A Fast Informal Explanation of Ruby's Object Hierarchy
+title: A Fast Informal Explanation of Ruby's Object Model
 ---
 
-Ruby is a cool language in no small part because it forces you to think in new ways about how to write code. While this is a great thing, learning a new concept for the first time is always challenging. For me, understanding code blocks in Ruby came more naturally than understanding its object hierarchy, but this was undoubtedly influenced by my previous exposure to closures from other languages; learning what a closure was for the first time was not so easy. My point is that you should not be discouraged when you can't grasp something the first time you're introduced to it. Instead, you should look for alternative ways of learning the topic that relate back to what you already know. 
+Ruby is a cool language in no small part because it forces you to think in new ways about how to write code. While this is a great thing, learning a new concept for the first time is always challenging. For me, understanding code blocks in Ruby came more naturally than understanding its object model, but this was undoubtedly influenced by my previous exposure to closures from other languages; learning what a closure was for the first time was not so easy. My point is that you should not be discouraged when you can't grasp something the first time you're introduced to it. Instead, you should look for alternative ways of learning the topic that relate back to what you already know. 
 
-I'd like to offer one of those alternative ways: a less jargony explanation of how Ruby's object hierarchy works.
+I'd like to offer one of those alternative ways: a less jargony explanation of how Ruby's object model works.
 
 It's often repeated that "any class you define in Ruby is an instance of the Class class, which is itself a subclass of the Object class." Well, that's a bit counterintuitive, isn't it? How can we define a Class to be a subclass of a.. class?
 
@@ -22,7 +22,7 @@ What you're actually doing is more along these lines:
     
     Person = Class.new
     
-If you think of a class you create as being *alive*--being a real variable like any other you can manipulate--things fall into place. All of a sudden it makes sense why you write Person.new any time you want a new instance of the Person class. You're really calling the "new" method of the Person object (which it inherited from the Class class), and that method is returning an instance of the Person *class* that you defined.
+If you think of a class you create as being *alive*--being a real variable like any other you can manipulate--things fall into place. All of a sudden it makes sense why you write Person.new any time you want a new instance of the Person class. You're really calling the "new" method of the Person object (which was inherited from the Class class), and that method is returning an instance of the Person *class* that you defined.
 
 It's all a bit like the Kansas City Shuffle.
         
