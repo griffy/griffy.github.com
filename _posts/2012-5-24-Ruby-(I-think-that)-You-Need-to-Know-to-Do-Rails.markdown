@@ -91,11 +91,13 @@ should be:
 
     obj.attribute
     
-
+<br/>
+<br/>
 
 <a href="#" name="addendum">Addendum</a>
 
 **Warning: Opinions Follow**
+
 I have a strong preference when it comes to the new alternative syntax for hashes introduced in Ruby 1.9. 
 
     key: value
