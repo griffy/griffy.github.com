@@ -3,7 +3,7 @@ layout: post
 title: Ruby (I think that) You Must Know to Do Rails
 ---
 
-## Method Calls
+### Method Calls
 You can call a method in Ruby without parentheses, regardless of whether or not it takes parameters. This is done a lot.
 
     obj.method_without_params()
@@ -22,7 +22,7 @@ could just be
     
 Accepted practice seems to be to always leave out the parentheses unless the parameters you're passing are themselves method calls; in that case, you'd still leave out parentheses for the outermost call, but use them for all inner calls.
 
-## Symbols and Hashes
+### Symbols and Hashes
 A symbol (e.g., :key) is an object just like a string. It's not a name (like a variable name), but an actual object. The reason symbols are preferred over strings is that
   1. if you sprinkle string literals all throughout your code, each of those will be a separate object, whereas there will only be one instance of the symbol no matter how many places you use it in your code.
   2. it's easier on the eyes as an identifier, such as in a hash
@@ -42,7 +42,7 @@ Which brings me to hashes. Hashes are used everywhere in Ruby. Unlike other lang
 
     hash = { key: value }
 
-That last one was just introduced in 1.9 [*][1].
+That last one was just introduced in 1.9 [#][1].
 
 When you're calling a method in Ruby that accepts a hash, you can do something fancy:
 
@@ -54,7 +54,7 @@ or just:
 
 Notice the lack of curly braces in either case.
 
-## Code Blocks
+### Code Blocks
 You can actually pass *code* as an object. It's referred to as a code block.
 
 As a simple example, let's say you wanted to iterate through an array and print out each item. In Ruby, it'd be something like this:
@@ -71,10 +71,10 @@ Great, but what's it doing? Well, names is an array of names. Arrays in Ruby hav
 
 What happens when Ruby gets to this point is to call "each" with your code block as a parameter. So, in "each" it begins to iterate through the list and *yield* the values, in succession, to your code block. Essentially, "each" calls your code like a function for each value in the array. So, if there are 10 items in the array, your code block will be called 10 times by "each."
 
-## Classes Are Objects
+### Classes Are Objects
 See [here](http://joel-griffith.com/2012/05/20/A-Fast-Informal-Explanation-of-Ruby%27s-Object-Model.html)
 
-## Style
+### Style
 Class names are CamelCase
 Variables are snake_case
 Indentation is 2 spaces.
