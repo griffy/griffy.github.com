@@ -92,9 +92,15 @@ should be:
     obj.attribute
     
 
-<a href="#" name="addendum"></a>
+
+<a href="#" name="addendum">Addendum</a>
+
 **Warning: Opinions Follow**
-I have a strong preference when it comes to the new alternative syntax for hashes. key: value is actually saying to create a key that is a symbol with the value :key that maps to value. While that's not so confusing, what is confusing is when you want to map a symbol to a symbol (as is often done in Rails). It looks something like this:
+I have a strong preference when it comes to the new alternative syntax for hashes introduced in Ruby 1.9. 
+
+    key: value
+    
+is actually saying to create a key that is a symbol with the value :key that maps to value. While that's not so confusing, what is confusing is when you want to map a symbol to a symbol (as is often done in Rails). It looks something like this:
 
     { key: :value }
     
