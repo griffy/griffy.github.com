@@ -44,7 +44,7 @@ Which brings me to hashes. Hashes are used everywhere in Ruby. Unlike other lang
     # 4
     hash = { key: value }
 
-That last one was just introduced in Ruby 1.9 [#](#addendum).
+That last one was just introduced in Ruby 1.9. Use it at your own discretion.
 
 When you're calling a method in Ruby that accepts a hash, you can do something fancy:
 
@@ -80,37 +80,10 @@ See [here](http://joel-griffith.com/2012/05/20/A-Fast-Informal-Explanation-of-Ru
 
 
 ### Style
-*  Class names are CamelCase
-*  Variables are snake_case
-*  Indentation is 2 spaces.
-*  Getters and setters are nowhere to be found. 
-
-    obj.getAttribute() 
-    
-should be:
-
-    obj.attribute
-    
-<br/>
-<br/>
-
-<a href="#" name="addendum">Addendum</a>
-
-**Warning: Opinions Follow**
-
-I have a strong preference when it comes to the new alternative syntax for hashes introduced in Ruby 1.9. 
-
-    key: value
-    
-is actually saying to create a key that is a symbol with the value :key that maps to value. While that's not so confusing, what is confusing is when you want to map a symbol to a symbol (as is often done in Rails). It looks something like this:
-
-    { key: :value }
-    
-Here's a hash with more than one mapping:
-
-    { key1: :value1, key2: :value2, key3: :value3 }
-    
-If you don't find that hard to parse, carry on.
+*  Class names: CamelCase
+*  Variables: snake_case
+*  Indentation: 2 spaces
+*  Getters and setters: nowhere to be found. Use attr_accessor (get/set), attr_reader (get), or attr_writer (set) instead.
 
         
 If you have any issues or corrections, feel free to leave them in the comments or [email](/contact) me.
