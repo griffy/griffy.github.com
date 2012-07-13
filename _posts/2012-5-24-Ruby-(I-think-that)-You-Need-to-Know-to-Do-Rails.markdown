@@ -76,7 +76,7 @@ To trace the flow of execution, what happens when Ruby gets to this point is to 
 
 
 ### Classes Are Objects
-See [here](http://joel-griffith.com/2012/05/20/A-Fast-Informal-Explanation-of-Ruby%27s-Object-Model.html)
+See [here](http://joel-griffith.com/2012/05/20/A-Fast-Informal-Explanation-of-Ruby%27s-Object-Model)
 
 
 ### Style
@@ -113,4 +113,4 @@ Here's a hash with more than one mapping:
 If you don't find that hard to parse, carry on.
 
         
-If you have any issues or corrections, feel free to leave them in the comments or [email](/contact.html) me.
+If you have any issues or corrections, feel free to leave them in the comments or [email](/contact) me.

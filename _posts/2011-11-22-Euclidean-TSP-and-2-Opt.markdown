@@ -92,4 +92,4 @@ We should have everything we need now. Putting it all together, we can write som
         while best_improvement > 0
         return tour
         
-That's 2-Opt, folks. If you have any issues or corrections, feel free to leave them in the comments or [email](/contact.html) me.
+That's 2-Opt, folks. If you have any issues or corrections, feel free to leave them in the comments or [email](/contact) me.

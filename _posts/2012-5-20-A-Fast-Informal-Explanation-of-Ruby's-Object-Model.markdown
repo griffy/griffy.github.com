@@ -26,4 +26,4 @@ If you think of a class you create as being *alive*--being a real variable like 
 
 It's all a bit like the Kansas City Shuffle.
         
-If you have any issues or corrections, feel free to leave them in the comments or [email](/contact.html) me.
+If you have any issues or corrections, feel free to leave them in the comments or [email](/contact) me.
