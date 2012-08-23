@@ -8,7 +8,7 @@ You just bought an album from Amazon, and you'd like to download all the songs a
 Not to worry! It's still possible. As of August 2012, here are some steps to acquire the ever-elusive .amz files:
 
 1. Change your browser's User Agent String to the following (I used the User Agent Switcher addon for Firefox and selected IE 8):
-    
+
     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
 
 2. Login to Amazon and open your Cloud Player.
@@ -17,7 +17,7 @@ Not to worry! It's still possible. As of August 2012, here are some steps to acq
 5. A popup should appear. Click on the "Install the Amazon MP3 Downloader" button.
 6. Cancel the download window that appears, and open the following URL in a separate tab: 
 
-[http://www.amazon.com/gp/dmusic/after_download_manager_install.html](http://www.amazon.com/gp/dmusic/after_download_manager_install.html)
+    [http://www.amazon.com/gp/dmusic/after_download_manager_install.html](http://www.amazon.com/gp/dmusic/after_download_manager_install.html)
 
 7. Go back to the original tab. If the Download button is still disabled, click the "Click here" link to refresh the page.
 8. Click the Download button, followed by the button to Authorize your device.
