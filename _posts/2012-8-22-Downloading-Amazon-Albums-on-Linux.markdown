@@ -9,7 +9,9 @@ Not to worry! It's still possible. As of August 2012, here are some steps to acq
 
 1. Change your browser's User Agent String to the following (I used the User Agent Switcher addon for Firefox and selected IE 8):
 
+{% highlight text %}
     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+{% endhighlight %}
 
 2. Login to Amazon and open your Cloud Player.
 3. Select your album and check the boxes next to all its tracks.
@@ -28,7 +30,9 @@ However, if your cookies for Amazon are cleared, you'll have to go through this 
 
 Once you have your .amz file, you can use it to download the album you purchased. I personally prefer using clamz for this, as it is available in a repository for virtually all distributions and its usage is simple:
 
+{% highlight bash %}
     $ clamz Amazon-[id_string].amz
+{% endhighlight %}
 
 Enjoy!
 
