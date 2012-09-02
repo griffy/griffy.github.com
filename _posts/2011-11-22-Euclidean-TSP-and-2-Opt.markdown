@@ -82,14 +82,14 @@ Now that we know which edges to perform pairwise exchanges on, we can gauge thei
 We should have everything we need now. Putting it all together, we can write some pseudo-code:
 
 {% highlight python %}
-    // where G is the graph and W is the weights of edges
+    # where G is the graph and W is the weights of edges
     def 2opt(G=(V,E), W):
-        // where tour is a list of vertices with assumed edges
+        # where tour is a list of vertices with assumed edges
         tour = random_tour(V)
         do:
             best_improvement = 0
             best_i, best_j
-            // the -3 means we avoid the above redundant calculations
+            # the -3 means we avoid the above redundant calculations
             for i from 0 to |V|-3:
                 for j from i+2 to |V|:
                     old_edge_dists = W[tour[i], tour[i+1 or 0]] + W[tour[j], tour[j+1 or 0]]
