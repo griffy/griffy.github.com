@@ -2,11 +2,10 @@
 layout: blog
 ---
 
-<h2>Recent Posts</h2>
+<h2>Recent Posts <a href="atom.xml"><i class="icon-rss"></i></a></h2>
 {% for post in site.posts %}
 <div class="post_preview">
   <span>{{ post.date | date_to_long_string }}</span>
   <span><a href="{{ post.id }}">{{ post.title }}</a></span>
 </div>
 {% endfor %}
-
