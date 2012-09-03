@@ -2,10 +2,16 @@
 layout: blog
 ---
 
-<h2>Recent Posts <a href="atom.xml"><i class="icon-rss"></i></a></h2>
-{% for post in site.posts %}
-<div class="post_preview">
-  <span>{{ post.date | date_to_long_string }}</span>
-  <span><a href="{{ post.id }}">{{ post.title }}</a></span>
-</div>
-{% endfor %}
+<h2>Recent Posts<a href="atom.xml" class="pull-right"><i class="icon-rss"></i></a></h2>
+<table class="posts">
+  <tr>
+  	<th>Date</th>
+  	<th>Post</th>
+  </tr>
+	{% for post in site.posts %}
+	<tr>
+	  <td>{{ post.date | date_to_long_string }}</td>
+	  <td><a href="{{ post.id }}">{{ post.title }}</a></td>
+	</tr>
+	{% endfor %}
+</table>
