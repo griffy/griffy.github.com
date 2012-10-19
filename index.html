@@ -18,11 +18,10 @@ title: About Me
 		$('.terminal-result').hide();
 
 		$('.terminal-input').jTypeWriter({
-			duration: 4,
+			duration: 1,
 			onComplete: function() {
 				setTimeout(function() {
-					$('.highlight').hide();
-					$('.terminal-result').show();
+                    $('.terminal-result').slideDown("slow");
 				}, 1000);
 			}
 		});
