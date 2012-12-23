@@ -121,6 +121,8 @@ a.text-info:hover{color:#2d6987;}
 a.text-success:hover{color:#356635;}
 h1,h2,h3,h4,h5,h6{margin:10px 0;font-family:inherit;font-weight:bold;line-height:20px;color:#62c462;text-rendering:optimizelegibility;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{font-weight:normal;line-height:1;color:#999999;}
 h1,h2,h3{line-height:40px;}
+/* change the color of all headers but h1 and h2 */
+h3,h4,h5,h6{color:#1ab2ff;}
 h1{font-size:33px;}
 h2{font-size:27px;}
 h3{font-size:21px;}
