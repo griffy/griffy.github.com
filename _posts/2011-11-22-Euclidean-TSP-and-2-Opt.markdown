@@ -88,18 +88,28 @@ We should have everything we need now. Putting it all together, we can write som
         tour = random_tour(V)
         do:
             best_improvement = 0
-            best_i, best_j
-            # the -3 means we avoid the above redundant calculations
-            for i from 0 to |V|-3:
-                for j from i+2 to |V|:
-                    old_edge_dists = W[tour[i], tour[i+1 or 0]] + W[tour[j], tour[j+1 or 0]]
-                    new_edge_dists = W[tour[i], tour[j]] + W[tour[i+1 or 0], tour[j+1 or 0]]
+            best_i, best_j = 0
+            # we only need to iterate through the first half of the edges,
+            # since the rest would be redundant
+            for i from 0 upto len(tour) / 2 + 1:
+                first_edge_u = i     # u represents the first vertex in the edge
+                first_edge_v = i + 1 # v represents the second vertex in the edge
+                # based on the second edge's v, we should stop 3 sooner
+                for j from 0 upto len(tour) - 3:
+                    second_edge_u = (i + j + 2) % len(tour)
+                    second_edge_v = (i + j + 3) % len(tour)
+                    old_edge_dists = W[tour[first_edge_u], tour[first_edge_v]] 
+                                   + W[tour[second_edge_u], tour[second_edge_v]]
+                    new_edge_dists = W[tour[first_edge_u], tour[second_edge_u]] 
+                                   + W[tour[first_edge_v], tour[second_edge_v]]
                     improvement = old_edge_dists - new_edge_dists
                     if improvement > best_improvement:
                         best_improvement = improvement
-                        best_i = i
-                        best_j = j
-            tour.swap(best_i+1 or 0, best_j)
+                        best_i = first_edge_u
+                        best_j = second_edge_u
+            if best_improvement > 0:
+                # swap the "middle" vertices
+                tour.swap((best_i + 1) % len(tour), best_j)
         while best_improvement > 0
         return tour
 {% endhighlight %}
